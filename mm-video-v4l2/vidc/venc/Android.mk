@@ -57,13 +57,13 @@ libmm-venc-def += -DUSE_CAMERA_METABUFFER_UTILS
 
 # Common Includes
 libmm-venc-inc      := $(LOCAL_PATH)/inc
-libmm-venc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/common/inc
-libmm-venc-inc      += $(call project-path-for,qcom-media)/mm-core/inc
-libmm-venc-inc      += $(call project-path-for,qcom-media)/libstagefrighthw
-libmm-venc-inc      += $(call project-path-for,qcom-media)/libplatformconfig
+libmm-venc-inc      += $(TOP)/hardware/qcom/media-845/mm-video-v4l2/vidc/common/inc
+libmm-venc-inc      += hardware/qcom/media-845/mm-core/inc
+libmm-venc-inc      += hardware/qcom/media-845/libstagefrighthw
+libmm-venc-inc      += hardware/qcom/media-845/libplatformconfig
 libmm-venc-inc      += $(TARGET_OUT_HEADERS)/qcom/display
 libmm-venc-inc      += $(TARGET_OUT_HEADERS)/adreno
-libmm-venc-inc      += $(call project-path-for,qcom-media)/libc2dcolorconvert
+libmm-venc-inc      += hardware/qcom/media-845/libc2dcolorconvert
 libmm-venc-inc      += $(TARGET_OUT_HEADERS)/libvqzip
 libmm-venc-inc      += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
